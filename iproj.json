@@ -1,9 +1,16 @@
 {
-  "repository": "git@github.com:IBM/ibmi-company_system.git",
+  "repository": "git@github.com:sebjulliand/ibmi-company_system.git",
   "description": "Company System project",
+  "objlib": "&verlibibmcompany",
+  "curlib": "&CURLIB",
   "includePath": [
     "qrpgleref"
   ],
-  "curlib": "&CURLIB",
-  "objlib": "&CURLIB"
+  "extensions": {
+    "arcad": {
+      "code": "IBMCOMPANY"
+    }
+  },
+  "buildCommand": "elias compile {branch}",
+  "compileCommand": "elias compile {branch} -f {files}"
 }
